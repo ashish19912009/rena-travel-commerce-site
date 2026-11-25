@@ -435,28 +435,18 @@ svg {
   color: #73e1d7;
 }
 
-.zrms {
-  font-size: 34px;
-  font-weight: 800;
-  letter-spacing: -.06em;
-  margin-top: 35px;
-}
-
-.zrms span {
-  display: inline-grid;
-  place-items: center;
-  width: 39px;
-  height: 39px;
-  background: #5bd8d2;
-  color: #0b1738;
-  border-radius: 12px;
+.product-wordmark {
+  display: block;
+  width: min(252px, 100%);
+  height: auto;
+  margin: 18px 0 0 -34px;
 }
 
 .product h2 {
   font-size: clamp(48px,5vw,70px);
   line-height: 1.02;
   letter-spacing: -.055em;
-  margin: 35px 0 26px;
+  margin: 18px 0 26px;
 }
 
 .product-copy>p {
