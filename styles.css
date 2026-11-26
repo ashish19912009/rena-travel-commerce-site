@@ -498,8 +498,14 @@ svg {
   align-items: center;
 }
 
-.company {
+.company-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 18px;
   margin-bottom: 96px;
+}
+
+.company {
   padding: clamp(26px, 5vw, 56px);
   border: 1px solid #e2e6ee;
   border-radius: 24px;
@@ -510,10 +516,20 @@ svg {
   font-size: clamp(28px, 4vw, 42px);
 }
 
+.founder-name {
+  margin-top: 24px;
+  font-size: 24px;
+  font-weight: 650;
+}
+
+.founder-role {
+  color: var(--muted);
+}
+
 .company-details {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px 56px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 24px;
   margin: 24px 0 0;
 }
 
@@ -605,7 +621,8 @@ footer {
     grid-template-columns: 1fr;
     gap: 35px;
   }
-  .company {
+  .company-grid {
+    grid-template-columns: 1fr;
     margin-bottom: 68px;
   }
   .capabilities {
@@ -628,6 +645,9 @@ footer {
 }
 
 @media(max-width:480px) {
+  .company-details {
+    grid-template-columns: 1fr;
+  }
   .hero h1 {
     font-size: 43px;
   }
